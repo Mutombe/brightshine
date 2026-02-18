@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, ArrowUpRight, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react'
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const links = {
   Company: [
@@ -80,7 +82,7 @@ export default function Footer({ onOpenPolicy, onOpenCookies }) {
               Premium cleaning services delivering spotless perfection since 2015.
             </p>
             <div className="flex gap-2.5">
-              {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (
+              {[Facebook, Instagram, FaXTwitter, Linkedin].map((Icon, i) => (
                 <a key={i} href="#" className="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center text-white/30 hover:text-gold-400 hover:bg-gold-500/10 transition-all">
                   <Icon className="w-4 h-4" />
                 </a>
